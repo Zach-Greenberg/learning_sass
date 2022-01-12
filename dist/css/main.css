@@ -1,3 +1,11 @@
+/* partials allow sass to be broken up into major componants which can be called/imported */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /*  maps in sass are like arrays in js */
 body {
   background: #272727;

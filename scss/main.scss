@@ -1,13 +1,6 @@
-$primary-color: #272727;
-$accent-color: #ff652f;
-$text-color: #fff;
-
-/*  maps in sass are like arrays in js */
-$font-weights: (
-    "regular": 400,
-    "medium": 500,
-    "bold": 700,
-);
+/* partials allow sass to be broken up into major componants which can be called/imported */
+@import './resets';
+@import './variables';
 
 body{
     background: $primary-color;

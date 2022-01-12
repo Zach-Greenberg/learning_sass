@@ -1,0 +1,10 @@
+$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+
+/*  maps in sass are like arrays in js */
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+);
