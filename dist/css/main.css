@@ -7,6 +7,8 @@
 }
 
 /*  maps in sass are like arrays in js */
+/* functions and mixins are simular but functions you input values and return values */
+/* mixins should define styles (ex: light and dark themes) */
 body {
   background: #272727;
   color: #fff;
@@ -16,6 +18,19 @@ body {
 
 /* nesting allows the developer not to retype the parent each and every time */
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 80%;
   margin: 0 auto;
   /* & calls the parent tag */
@@ -27,5 +42,7 @@ body {
 }
 
 .main .main_paragraph:hover {
-  color: pink;
+  color: blue;
 }
+
+/* if true will include in css if false it will not include the mixin */
