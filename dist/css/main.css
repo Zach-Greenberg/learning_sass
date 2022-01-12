@@ -1,0 +1,23 @@
+/*  maps in sass are like arrays in js */
+body {
+  background: #272727;
+  color: #fff;
+  /* map-get then select the map then select the option within the map */
+  font-weight: 700;
+}
+
+/* nesting allows the developer not to retype the parent each and every time */
+.main {
+  width: 80%;
+  margin: 0 auto;
+  /* & calls the parent tag */
+  /* to include the partent and more specified child we have to use interpolation */
+}
+
+.main .main_paragraph {
+  font-weight: 700;
+}
+
+.main .main_paragraph:hover {
+  color: pink;
+}

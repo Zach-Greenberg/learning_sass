@@ -1,0 +1,33 @@
+$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+
+/*  maps in sass are like arrays in js */
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+);
+
+body{
+    background: $primary-color;
+    color: $text-color;
+    /* map-get then select the map then select the option within the map */
+    font-weight: map-get($font-weights, bold);
+}
+
+    /* nesting allows the developer not to retype the parent each and every time */
+.main{
+    width: 80%;
+    margin: 0 auto;
+
+    /* & calls the parent tag */
+    /* to include the partent and more specified child we have to use interpolation */
+    #{&}_paragraph{
+        font-weight: map-get($font-weights, bold);
+
+        &:hover{
+            color: pink;
+        }
+    }
+}
