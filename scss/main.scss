@@ -2,6 +2,10 @@
 @import './resets';
 @import './variables';
 
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
 body{
     background: $primary-color;
     color: $text-color;
@@ -17,7 +21,7 @@ body{
     /* & calls the parent tag */
     /* to include the partent and more specified child we have to use interpolation */
     #{&}_paragraph{
-        font-weight: map-get($font-weights, bold);
+        font-weight: weight(bold);
 
         &:hover{
             color: pink;
