@@ -36,7 +36,7 @@ body{
     /* nesting allows the developer not to retype the parent each and every time */
 .main{
     @include flexCenter(column);
-    width: 80%;
+    width: 80%-40%; /* sass operations need to be the same units while css calc can do mix units */
     margin: 0 auto;
 
     /* & calls the parent tag */
