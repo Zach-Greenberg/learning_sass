@@ -35,14 +35,26 @@ body {
   margin: 0 auto;
   /* & calls the parent tag */
   /* to include the partent and more specified child we have to use interpolation */
+  /* extend copies the styling and nesting and puts the styling in the new class tag */
 }
 
-.main .main_paragraph {
+.main .main_paragraph1, .main .main_paragraph2 {
   font-weight: 700;
 }
 
-.main .main_paragraph:hover {
-  color: blue;
+.main .main_paragraph1:hover, .main .main_paragraph2:hover {
+  color: pink;
+}
+
+.main .main_paragraph2:hover {
+  color: #ff652f;
+}
+
+@media (max-width: 800px) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* if true will include in css if false it will not include the mixin */
