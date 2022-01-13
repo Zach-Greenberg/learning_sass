@@ -31,7 +31,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
+  width: 40%;
+  /* sass operations need to be the same units while css calc can do mix units */
   margin: 0 auto;
   /* & calls the parent tag */
   /* to include the partent and more specified child we have to use interpolation */
